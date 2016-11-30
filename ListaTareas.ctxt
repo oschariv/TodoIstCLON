@@ -13,5 +13,5 @@ comment3.target=int\ getNumeroTareas()
 comment3.text=\r\n\ Devuelve\ el\ numero\ de\ tareas\ existentes\r\n
 comment4.params=posicion
 comment4.target=void\ deleteTarea(int)
-comment4.text=\r\n\ Elimina\ una\ tarea.\r\n
+comment4.text=\r\n\ Elimina\ una\ tarea.\r\n\ La\ posicion\ inicial\ es\ "cero"\r\n
 numComments=5

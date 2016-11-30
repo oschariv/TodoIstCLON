@@ -3,7 +3,7 @@ import java.util.ArrayList;
  * Descripcion de la clase ListaTareas.
  * 
  * @author (oschariv) 
- * @1.0 (28/11/2016)
+ * @version (1.0 - 28/11/2016)
  */
 public class ListaTareas
 {
@@ -48,5 +48,8 @@ public class ListaTareas
 	 * Elimina una tarea.
 	 * La posicion inicial es "cero"
 	 */
-	public void deleteTarea(int posicion){}
+	public void deleteTarea(int posicion)
+	{
+	    listaDeTareas.remove(posicion);
+	}
 }
