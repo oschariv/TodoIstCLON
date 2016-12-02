@@ -86,6 +86,7 @@ public class ListaTareas
     
     /**
      * Metodo que imprime todas las tareas existentes, una por linea.
+     * (Se usa el bucle FOR).
      * El metodo imprime el numero de posicion de la tarea antes del
      * nombre de tarea.
      */
@@ -130,6 +131,54 @@ public class ListaTareas
         {
             System.out.println(cont + " tareas encontradas para " + contenido);
         }
+    }
+    
+    /**
+     * Muestra todas las tareas existentes (usando un bucle WHILE)
+     * y que esten numerdads.
+     */
+    public void mostrarTareas2()
+    {
+        int contador = 0;
+        while (contador < listaDeTareas.size())
+        {
+            System.out.println((contador + 1) + ". " + listaDeTareas.get(contador));
+            contador++;
+        }
+    }
+    
+    /**
+     * Muestra por pantalla las primera "N" tareas indicads como parametro.
+     * En caso de que haya menos de "N" tareas se muestran todas.
+     */
+    public void mostrarPrimerasTareas(int numeroTareasAMostrar)
+    {
+        int contador = 0;
+        while(contador < numeroTareasAMostrar && contador < listaDeTareas.size())
+        {
+            System.out.println((contador + 1) + ". " + listaDeTareas.get(contador));
+            contador++;        
+        }
+    }
+    
+    /**
+     * Devuelve true o false si hay al menos una tarea que contien el texto
+     * indicado como parametro. NO MUESTRA NADA POR PANTALLA.
+     */
+    public boolean hayTareasCoincidentes(String textoABuscar)
+    {
+        boolean coincidencia = false;
+        int contador = 0;
+        
+        while(contador < listaDeTareas.size())
+        {
+            if (listaDeTareas.get(contador).contains(textoABuscar))
+            {
+                coincidencia = true;           
+            }
+            contador++;
+        }
+        return coincidencia;        
     }
     
 }
