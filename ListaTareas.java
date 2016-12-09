@@ -170,7 +170,7 @@ public class ListaTareas
         boolean coincidencia = false;
         int contador = 0;
         
-        while(contador < listaDeTareas.size())
+        while(contador < listaDeTareas.size() && coincidencia == false)
         {
             if (listaDeTareas.get(contador).contains(textoABuscar))
             {
